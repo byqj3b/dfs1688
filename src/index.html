@@ -1,13 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="dfs" ng-controller="dfsController">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>大丰收农资商城</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+<div ng-bind="msg"></div>
+<header ng-bind="msg"></header>
+<script src="js/angular.js"></script>
 
+
+<script src="js/index.js"></script>
+<script src="lib/angular-ui-router/release/angular-ui-router.js"></script>
+<script src="lib/angular/angular.js"></script>
 <script>
-
+    //自动获取屏幕分辨率
+    var foneSzie = window.screen.width / 10 + 'px';
+    document.getElementsByTagName('html')[0].style.fontSize = foneSzie;
 </script>
 </body>
 </html>
